@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D108C7">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="2dp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:layout_marginEnd="2dp"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#C915E8"
+            android:gravity="center"
+            android:onClick="clrClick"
+            android:text="clear"
+            android:textAllCaps="true"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_marginEnd="2dp"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#C915E8"
+            android:gravity="center"
+            android:onClick="operationclick"
+            android:text="/"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4"
+            android:layout_margin="2dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="2dp"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="7"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="2dp"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="8"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="9"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#9C11E6"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="*"
+                android:onClick="operationclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="4"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="5"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="6"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#9C11E6"
+                android:gravity="center"
+                android:onClick="operationclick"
+                android:text="-"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="1"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="2"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="3"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#9C11E6"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/black"
+                android:onClick="operationclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="4"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:id="@+id/Dot"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="."
+                android:layout_marginEnd="2dp"
+                android:onClick="dotclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="0"
+                android:layout_marginEnd="2dp"
+                android:onClick="numberclick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#470968"
+                android:gravity="center"
+                android:text="del"
+                android:layout_marginEnd="2dp"
+                android:onClick="deleteClick"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#9C11E6"
+                android:gravity="center"
+                android:text="="
+                android:onClick="equalsclick"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:textSize="30sp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteY="118dp">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
